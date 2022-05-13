@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>개구리 색 맞추기</title>
+    <link rel="icon" href="frog.png" />
+  </head>
+  <body>
+    <h1 id="intro">개구리는 과연 무슨색일까요?🐸</h1>
+    <div id="start-box">
+      <img src="frog.png" alt="개구리" id="frog" />
+      <div id="start-intro">나의 색이 궁금해?</div>
+      <button id="start-button">시작하기</button>
+    </div>
+    <div id="game-box" style="display: none">
+      <div id="score">현재 스코어 : 0</div>
+      <div id="hint-box">나는, #1651586색이야!🐸</div>
+      <input type="radio" id="first" />
+      <label for="first">첫번째</label>
+      <input type="radio" id="second" />
+      <label for="second">두번째</label>
+      <input type="radio" id="third" />
+      <label for="third">세번째</label>
+      <input type="radio" id="fourth" />
+      <label for="fourth">네번째</label>
+      <input type="radio" id="fifth" />
+      <label for="fifth">다섯번째</label>
+      <button id="color-button">제출</button>
+    </div>
+    <div id="finish-box" style="display: none">
+      <h1 id="finish-intro">내 색을 0번이나 맞추다니!</h1>
+      <h3 id="finish-subtro">꽤나 잘하는데?</h3>
+      <button id="regame">다시하기</button>
+    </div>
+  </body>
+  <script src="./colorpicker.js"></script>
+</html>
